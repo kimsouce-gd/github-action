@@ -1,0 +1,17 @@
+name: helloGithubAction
+
+##if push event occurs, exec
+on: [push]
+
+jobs:
+  build:
+    ##OS image
+    runs-on: ubuntu-latest
+    steps:
+     
+    - name: print kimsouce !!
+      run: echo hello, kimsouce!
+    - name: print Directory!!
+      run: ls -al
+    - name: print GO version!!
+      run: go version
